@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.guomin0999.slidetab.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+
+        <cn.guomin0999.library.TabSliderView
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            app:barColor="#FFD800"
+            app:indicator="@mipmap/slider_bg"
+            app:lineHeight="2dp" />
+
+        <LinearLayout
+            android:id="@+id/rg_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_make_money"
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tab_item_bg_trans"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@mipmap/heart"
+                android:gravity="center"
+                android:text="ITEM1"
+                android:textColor="@color/tab_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_invite"
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tab_item_bg_trans"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@mipmap/heart"
+                android:gravity="center"
+                android:text="ITEM2"
+                android:textColor="@color/tab_text_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_message"
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tab_item_bg_trans"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@mipmap/heart"
+                android:gravity="center"
+                android:text="ITEM3"
+                android:textColor="@color/tab_text_color" />
+
+
+            <RadioButton
+                android:id="@+id/rb_discover"
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tab_item_bg_trans"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@mipmap/heart"
+                android:gravity="center"
+                android:text="ITEM4"
+                android:textColor="@color/tab_text_color" />
+
+            <RadioButton
+                android:id="@+id/rb_me"
+                style="@style/Base.TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@drawable/tab_item_bg_trans"
+                android:button="@null"
+                android:drawableTop="@mipmap/heart"
+                android:gravity="center"
+                android:text="ITEM5"
+                android:textColor="@color/tab_text_color" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TabSliderView">
+        <attr name="lineHeight" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="indicator" format="reference" />
+    </declare-styleable>
+
+
+</resources>
